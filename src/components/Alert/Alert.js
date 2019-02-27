@@ -12,7 +12,7 @@ const myAlert = (props) => {
                 </p>
                 <hr/>
                 <p className="mb-1">
-                    Click the links above to know more about me!
+                    Click the links above to have fun!
                 </p>
             </Alert>
         </div>

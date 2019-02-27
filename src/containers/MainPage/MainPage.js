@@ -40,7 +40,7 @@ export default class MainPage extends Component {
 
     render() {
         return (
-            <Fragment>
+            <div className="container">
                 <NavBar/>
                 <MyAlert/>
                 <Row className="mt-4">
@@ -49,7 +49,7 @@ export default class MainPage extends Component {
                         key={index}
                     />)}
                 </Row>
-            </Fragment>
+            </div>
         )
     }
 }
