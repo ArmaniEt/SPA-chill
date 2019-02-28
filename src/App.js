@@ -3,15 +3,18 @@ import './App.css';
 import MainPage from './containers/MainPage/MainPage'
 import {Route, Switch, BrowserRouter} from 'react-router-dom';
 import FindO from './containers/FindO/FindO';
+import Layout from "./Layout"
 
 class App extends Component {
     render() {
         return (
             <BrowserRouter>
-                <Switch>
-                    <Route path="/" exact component={MainPage}/>
-                    <Route path="/game" component={FindO}/>
-                </Switch>
+                <Layout>
+                    <Switch>
+                        <Route path="/" exact component={MainPage}/>
+                        <Route path="/game" component={FindO}/>
+                    </Switch>
+                </Layout>
             </BrowserRouter>
 
         );

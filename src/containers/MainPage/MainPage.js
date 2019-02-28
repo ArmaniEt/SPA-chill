@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './MainPage.css';
-import NavBar from '../../components/NavBar/NavBar'
 import axios from 'axios';
 import Joke from "../../components/Joke/Joke"
 import MyAlert from "../../components/Alert/Alert"
@@ -40,8 +39,7 @@ export default class MainPage extends Component {
 
     render() {
         return (
-            <div className="container">
-                <NavBar/>
+            <div>
                 <MyAlert/>
                 <Row className="mt-4">
                     {this.state.jokes.map((joke, index) => <Joke
