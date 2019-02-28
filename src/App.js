@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import MainPage from './containers/MainPage/MainPage'
 import {Route, Switch, BrowserRouter} from 'react-router-dom';
-
+import FindO from './containers/FindO/FindO';
 
 class App extends Component {
     render() {
@@ -10,6 +10,7 @@ class App extends Component {
             <BrowserRouter>
                 <Switch>
                     <Route path="/" exact component={MainPage}/>
+                    <Route path="/game" component={FindO}/>
                 </Switch>
             </BrowserRouter>
 

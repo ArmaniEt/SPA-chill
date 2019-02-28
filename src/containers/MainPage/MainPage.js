@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import './MainPage.css';
 import NavBar from '../../components/NavBar/NavBar'
 import axios from 'axios';

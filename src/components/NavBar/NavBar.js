@@ -1,6 +1,6 @@
 import React from 'react';
-import {Nav, NavItem, NavLink} from 'reactstrap';
-//import { NavLink } from 'react-router-dom'
+import {Nav, NavItem} from 'reactstrap';
+import { NavLink } from 'react-router-dom'
 
 export default class NavBar extends React.Component {
     render() {
@@ -8,13 +8,10 @@ export default class NavBar extends React.Component {
             <div>
                 <Nav>
                     <NavItem>
-                        <NavLink href="#">Home</NavLink>
+                        <NavLink to="/">Home</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="#">Play a game</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="#">Contacts</NavLink>
+                        <NavLink to='/game'>Play a game</NavLink>
                     </NavItem>
                 </Nav>
             </div>
