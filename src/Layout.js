@@ -14,6 +14,9 @@ export default class Layout extends React.Component {
                     <NavItem>
                         <NavLink className="nav__link" to='/game'>Play a game</NavLink>
                     </NavItem>
+                    <NavItem>
+                        <NavLink className="nav__link" to='/chill'>Just Chill</NavLink>
+                    </NavItem>
                 </Nav>
                 <div>
                     {this.props.children}

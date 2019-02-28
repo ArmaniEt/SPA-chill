@@ -4,6 +4,7 @@ import MainPage from './containers/MainPage/MainPage'
 import {Route, Switch, BrowserRouter} from 'react-router-dom';
 import FindO from './containers/FindO/FindO';
 import Layout from "./Layout"
+import Animation from "./components/AnimatedComp/Animation"
 
 class App extends Component {
     render() {
@@ -13,6 +14,7 @@ class App extends Component {
                     <Switch>
                         <Route path="/" exact component={MainPage}/>
                         <Route path="/game" component={FindO}/>
+                        <Route path="/chill" component={Animation}/>
                     </Switch>
                 </Layout>
             </BrowserRouter>

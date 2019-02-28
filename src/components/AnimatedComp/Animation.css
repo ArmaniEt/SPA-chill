@@ -1,0 +1,41 @@
+.animation__elem {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    background-color: coral;
+    animation: square-to-circle 5s 2s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+    outline: 1px solid transparent;
+    -webkit-animation: square-to-circle 5s 2s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+    -moz-animation: square-to-circle 5s 2s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+    -o-animation: square-to-circle 5s 2s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+}
+@keyframes square-to-circle {
+    0%{
+        border-radius: 0 0 0 0;
+        background: coral;
+        transform:rotate(0deg);
+    }
+    25%{
+        border-radius: 50% 0 0 0;
+        background: darksalmon;
+        transform:rotate(45deg);
+    }
+    50%{
+        border-radius: 50% 50% 0 0;
+        background:indianred;
+        transform:rotate(90deg);
+    }
+    75%{
+        border-radius: 50% 50% 50% 0;
+        background: lightcoral;
+        transform:rotate(135deg);
+    }
+    100%{
+        border-radius: 50%;
+        background: darksalmon;
+        transform:rotate(180deg);
+    }
+    
+}
